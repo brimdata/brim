@@ -1,6 +1,6 @@
 import {Client} from "@brimdata/zed-node"
-import {net} from "electron"
+import nodeFetch from "node-fetch"
 
 export class ElectronZedClient extends Client {
-  fetch = net.fetch
+  fetch = nodeFetch
 }
