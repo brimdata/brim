@@ -28,7 +28,35 @@ jobs:
           set -x
           case ${{ runner.os }} in
             Linux )
-              yarn nx package-zui zui --linux=deb --publish never
+              yarn nx package-zui zui --publish never
               sudo apt install -y --no-install-recommends ./dist/apps/zui/*.deb
               ;;
           esac
+      - name: Persist Linux RPM package
+        if: runner.os == 'Linux'
+        uses: actions/upload-artifact@v2
+        with:
+          name: linux-release
+          path: dist/apps/zui/*.rpm
+
+  test-rpm-linux:
+    runs-on: ubuntu-20.04
+    needs: build
+    container:
+      image: rocky:9.0
+    steps:
+      - run: git config --global core.autocrlf false
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - run: dnf install -y xorg-x11-server-Xvfb
+      - name: Download rpm package
+        uses: actions/download-artifact@v4
+        with:
+          name: linux-release
+          path: linux-release
+      - name: Integration Tests (Centos 8)
+        run: |
+          dnf install -y ./linux-release/zui*.rpm
+          xvfb-run -d -s "-screen 0 1280x1024x24" yarn test
