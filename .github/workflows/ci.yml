@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: build
     container:
-      image: rocky:9.0
+      image: rockylinux:9.0
     steps:
       - run: git config --global core.autocrlf false
       - uses: actions/checkout@v4
