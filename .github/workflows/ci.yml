@@ -45,18 +45,18 @@ jobs:
     container:
       image: rockylinux:9.0
     steps:
-      - run: git config --global core.autocrlf false
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-      - run: dnf install -y xorg-x11-server-Xvfb
+      - run: dnf install -y xorg-x11-server-Xvfb git
+      - run: git config --global core.autocrlf false
       - name: Download rpm package
         uses: actions/download-artifact@v4
         with:
           name: linux-release
           path: linux-release
-      - name: Integration Tests (Centos 8)
+      - name: Run tests on Rocky Linux (RPM installer)
         run: |
           dnf install -y ./linux-release/zui*.rpm
           xvfb-run -d -s "-screen 0 1280x1024x24" yarn test
