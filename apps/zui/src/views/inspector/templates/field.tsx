@@ -15,6 +15,7 @@ export function field(view: View, mode: RenderMode) {
   nodes.push(item(view, mode))
 
   if (view.decorator && view.showDecorator) {
+    console.log('view.decorator = ' + view.decorator)
     nodes.push(typename(view.decorator))
   }
 

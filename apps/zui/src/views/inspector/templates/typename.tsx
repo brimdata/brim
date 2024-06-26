@@ -1,6 +1,7 @@
 import React from "react"
 
 export function typename(name: string) {
+  console.log("Here is the name value: " + name)
   return [
     <span key="alias-1" className="zed-syntax">
       {" "}

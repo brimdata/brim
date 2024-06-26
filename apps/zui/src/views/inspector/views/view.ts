@@ -52,6 +52,8 @@ export class View<T = any> {
   }
 
   get decorator() {
+    console.log('I am in get decorator(). Here is this:')
+    console.log(this)
     if (zed.isTypeAlias(this.type)) return this.type.name
     else return null
   }

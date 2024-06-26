@@ -12,6 +12,7 @@ export class TypeAlias implements Type {
   constructor(public name: string, public type: Type) {}
 
   static stringify(name: string, type: Type) {
+    console.log('I am in the TypeAlias stringify. name = ' + name);
     return name + '=(' + type.toString() + ')';
   }
 
@@ -35,6 +36,7 @@ export class TypeAlias implements Type {
   }
 
   toString() {
-    return this.name + '=(' + this.type.toString() + ')';
+    console.log('I am in the TypeAlias toString');
+    return this.name + '=' + this.type.toString();
   }
 }
