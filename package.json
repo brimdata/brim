@@ -13,6 +13,7 @@
     "build": "nx run-many -t build --all",
     "lint": "nx run-many -t lint --all --exclude zui-player",
     "test": "nx run-many -t test --all --exclude zui-player --skip-nx-cache",
+    "test-pools-api": "nx run zui:test-pools-api --skip-nx-cache",
     "start": "nx start zui",
     "e2e": "NODE_ENV=production nx test zui-player",
     "e2e:ci": "NODE_ENV=production nx ci zui-player",

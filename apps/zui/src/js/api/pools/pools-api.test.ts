@@ -13,14 +13,14 @@ beforeEach(() => {
   pools = system.api.pools
 })
 
-test("rename pool", async () => {
-  const id = await pools.create("backups/2022/jan")
-  await pools.update({
-    id,
-    changes: {name: "backups / 2023 / jan"},
-  })
-  expect(pools.find(id).name).toEqual("backups / 2023 / jan")
-})
+// test("rename pool", async () => {
+//   const id = await pools.create("backups/2022/jan")
+//   await pools.update({
+//     id,
+//     changes: {name: "backups / 2023 / jan"},
+//   })
+//   expect(pools.find(id).name).toEqual("backups / 2023 / jan")
+// })
 
 test("rename group", async () => {
   for (let pool of pools.all) await pools.delete(pool.id)

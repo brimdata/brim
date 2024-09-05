@@ -23,6 +23,7 @@
     "build:renderer": "next build",
     "clean": "node scripts/clean",
     "test": "jest",
+    "test-pools-api": "jest pools-api.test.ts",
     "format": "prettier '**/*.{js,ts,tsx,scss}' --write --loglevel warn",
     "tsc": "tsc",
     "postinstall": "node scripts/post-install",
