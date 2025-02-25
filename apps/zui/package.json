@@ -22,7 +22,7 @@
     "build": "run-p -l 'build:**'",
     "build:main": "node scripts/esbuild.mjs",
     "build:renderer": "next build",
-    "build:tsc": "tsc",
+    "lint": "tsc",
     "clean": "node scripts/clean",
     "test": "run -T jest",
     "format": "prettier '**/*.{js,ts,tsx,scss}' --write --loglevel warn",

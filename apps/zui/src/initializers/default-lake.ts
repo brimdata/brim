@@ -6,8 +6,7 @@ import Lakes from "src/js/state/Lakes"
  */
 export function initialize(main: MainObject) {
   const port = main.args.lakePort
-  const user = main.appMeta.userName
-  const lake = Lakes.getDefaultLake(port, user)
+  const lake = Lakes.getDefaultLake(port)
 
   const exists = Lakes.id(lake.id)(main.store.getState())
   if (exists) return

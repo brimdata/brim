@@ -4,8 +4,7 @@ import {LakeAttrs} from "../state/Lakes/types"
 // These need to be moves to some renderer lake model
 export const defaultLake = (): LakeAttrs => {
   const port = global.mainArgs.lakePort.toString()
-  const user = global.appMeta.userName
-  return Lakes.getDefaultLake(port, user)
+  return Lakes.getDefaultLake(port)
 }
 
 // These need to be moves to some renderer lake model

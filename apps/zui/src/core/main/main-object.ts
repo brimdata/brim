@@ -170,8 +170,7 @@ export class MainObject {
 
   async createDefaultClient() {
     const port = this.args.lakePort
-    const user = this.appMeta.userName
-    const lake = Lakes.getDefaultLake(port, user)
+    const lake = Lakes.getDefaultLake(port)
     return this.createClient(lake.id)
   }
 }
