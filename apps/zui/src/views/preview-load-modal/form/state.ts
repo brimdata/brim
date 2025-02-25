@@ -13,7 +13,7 @@ export function useLoadFormState() {
   const poolId = useSelector(LoadDataForm.getPoolId) || "new"
   const format = useSelector(LoadDataForm.getFormat)
   const defaultUser = globalThis.appMeta.userName
-  const defaultMessage = "Import from Zui"
+  const defaultMessage = "Import from SuperDB Desktop"
   const [error, setError] = useState(null)
   const newPool = poolId === "new"
 

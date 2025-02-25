@@ -25,7 +25,7 @@ export function PoolForm(props: Props) {
       />
 
       <label>Sort Order</label>
-      <div className="cluster">
+      <div className="cluster gap-s">
         <label htmlFor="ascending">
           <input id="ascending" name="order" type="radio" value="asc" />
           Ascending
