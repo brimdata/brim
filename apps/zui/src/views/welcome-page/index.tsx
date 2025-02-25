@@ -1,6 +1,5 @@
 import React, {useLayoutEffect} from "react"
 import {connectToLake} from "src/app/commands/connect-to-lake"
-import {Subtitle} from "src/components/subtitle"
 import {Title} from "src/components/title"
 import styled from "styled-components"
 import links from "src/config/links"
@@ -51,9 +50,8 @@ export function WelcomePage() {
   return (
     <BG>
       <Title>
-        Welcome to <span>Zui</span>
+        <span>SuperDB</span> Desktop
       </Title>
-      <Subtitle>Zed User Interface</Subtitle>
       <Card>
         <h1>Get Started</h1>
         <Actions>
