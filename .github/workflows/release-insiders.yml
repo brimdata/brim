@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Zui
-        uses: ./.github/actions/setup-zui
+        uses: ./.github/actions/setup-app
 
       - name: Inject package.json
         run: yarn nx inject insiders ${{ needs.check_latest.outputs.version }}

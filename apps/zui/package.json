@@ -1,8 +1,8 @@
 {
-  "name": "zui",
-  "productName": "Zui",
+  "name": "superdb-desktop",
+  "productName": "SuperDB",
   "private": true,
-  "description": "Zed User Interface",
+  "description": "SuperDB Desktop",
   "repository": "https://github.com/brimdata/zui",
   "license": "BSD-3-Clause",
   "version": "1.18.0",
@@ -29,8 +29,8 @@
     "tsc": "",
     "postinstall": "node scripts/post-install.cjs",
     "prepare": "husky install",
-    "package-zui": "electron-builder --publish never",
-    "release-zui": "electron-builder",
+    "package-app": "electron-builder --publish never",
+    "release-app": "electron-builder",
     "package-insiders": "electron-builder --config electron-builder-insiders.json --publish never",
     "release-insiders": "electron-builder --config electron-builder-insiders.json --publish always"
   },

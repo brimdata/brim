@@ -20,5 +20,9 @@ async function start() {
 }
 
 process.on("SIGINT", () => process.exit(0))
-
-start()
+try {
+  await start()
+} catch (e) {
+  console.error(e)
+  process.exit(1)
+}

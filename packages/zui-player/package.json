@@ -6,13 +6,15 @@
   "scripts": {
     "lint": "tsc",
     "test": "playwright test -c playwright.config.js",
-    "ci": "playwright test -c ci.config.js"
+    "ci": "playwright test -c ci.config.js",
+    "clean": "rimraf run"
   },
   "dependencies": {
     "@playwright/test": "1.44.0",
     "fs-extra": "^11.3.0",
     "playwright": "1.44.0",
     "playwright-chromium": "1.44.0",
+    "rimraf": "^6.0.1",
     "typescript": "5.1.5"
   }
 }

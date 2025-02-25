@@ -6,7 +6,8 @@
   "exports": "./dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@brimdata/zed-js": "workspace:*",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "node-fetch": "^2.6.1",
+    "rimraf": "^6.0.1",
     "super": "github:brimdata/super#main",
     "typescript": "5.1.5"
   },

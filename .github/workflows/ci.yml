@@ -1,4 +1,4 @@
-name: Zui CI
+name: CI
 
 on:
   pull_request:
@@ -17,7 +17,7 @@ jobs:
     steps:
       - run: git config --global core.autocrlf false
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-zui
+      - uses: ./.github/actions/setup-app
       - run: yarn lint
       - run: yarn test
       - name: Build and install package
@@ -28,7 +28,7 @@ jobs:
           set -x
           case ${{ runner.os }} in
             Linux )
-              yarn nx package-zui zui --linux=deb --publish never
+              yarn nx package-app superdb-desktop --linux=deb --publish never
               sudo apt install -y --no-install-recommends ./dist/apps/zui/*.deb
               ;;
           esac

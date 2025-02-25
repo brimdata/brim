@@ -1,5 +1,5 @@
-name: Build Zui
-description: Build Zui for the current platform
+name: Build App
+description: Build app for the current platform
 inputs:
   cmd:
     required: false

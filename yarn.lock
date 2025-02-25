@@ -468,6 +468,7 @@ __metadata:
     event-source-polyfill: ^1.0.31
     events: ^3.3.0
     jest: ^29.7.0
+    rimraf: ^6.0.1
     strftime: ^0.10.3
     typescript: 5.1.5
   languageName: unknown
@@ -481,6 +482,7 @@ __metadata:
     fs-extra: ^11.3.0
     jest: ^29.7.0
     node-fetch: ^2.6.1
+    rimraf: ^6.0.1
     super: "github:brimdata/super#main"
     typescript: 5.1.5
   peerDependencies:
@@ -6595,6 +6597,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^11.0.0":
+  version: 11.0.1
+  resolution: "glob@npm:11.0.1"
+  dependencies:
+    foreground-child: ^3.1.0
+    jackspeak: ^4.0.1
+    minimatch: ^10.0.0
+    minipass: ^7.1.2
+    package-json-from-dist: ^1.0.0
+    path-scurry: ^2.0.0
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: ffbbafe1d2dae2fa68f190ac76df7254e840b27f59df34129fd658bd9da0c50b538d144eb0962dc7fa71cdaccf3fe108f045d4a15b3f5815e465749a6bf00965
+  languageName: node
+  linkType: hard
+
 "glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.1.6
   resolution: "glob@npm:7.1.6"
@@ -7595,6 +7613,15 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 57d43ad11eadc98cdfe7496612f6bbb5255ea69fe51ea431162db302c2a11011642f50cfad57288bd0aea78384a0612b16e131944ad8ecd09d619041c8531b54
+  languageName: node
+  linkType: hard
+
+"jackspeak@npm:^4.0.1":
+  version: 4.1.0
+  resolution: "jackspeak@npm:4.1.0"
+  dependencies:
+    "@isaacs/cliui": ^8.0.2
+  checksum: cfc2b527e4b51e55a21961c091b37dfd177341196d089a355eb692f8895b24b6caac912b4f594b64cfaf6d2bdf085898361379b74f27936ed3d5e0ba75f96e94
   languageName: node
   linkType: hard
 
@@ -8632,6 +8659,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^11.0.0":
+  version: 11.0.2
+  resolution: "lru-cache@npm:11.0.2"
+  checksum: f9c27c58919a30f42834de9444de9f75bcbbb802c459239f96dd449ad880d8f9a42f51556d13659864dc94ab2dbded9c4a4f42a3e25a45b6da01bb86111224df
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^5.1.1":
   version: 5.1.1
   resolution: "lru-cache@npm:5.1.1"
@@ -8929,6 +8963,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimatch@npm:^10.0.0":
+  version: 10.0.1
+  resolution: "minimatch@npm:10.0.1"
+  dependencies:
+    brace-expansion: ^2.0.1
+  checksum: f5b63c2f30606091a057c5f679b067f84a2cd0ffbd2dbc9143bda850afd353c7be81949ff11ae0c86988f07390eeca64efd7143ee05a0dab37f6c6b38a2ebb6c
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.4, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -9059,6 +9102,13 @@ __metadata:
   version: 7.1.1
   resolution: "minipass@npm:7.1.1"
   checksum: d2c461947a7530f93de4162aa3ca0a1bed1f121626906f6ec63a5ba05fd7b1d9bee4fe89a37a43db7241c2416be98a799c1796abae583c7180be37be5c392ef6
+  languageName: node
+  linkType: hard
+
+"minipass@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "minipass@npm:7.1.2"
+  checksum: 2bfd325b95c555f2b4d2814d49325691c7bee937d753814861b0b49d5edcda55cbbf22b6b6a60bb91eddac8668771f03c5ff647dcd9d0f798e9548b9cdc46ee3
   languageName: node
   linkType: hard
 
@@ -9852,6 +9902,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"package-json-from-dist@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "package-json-from-dist@npm:1.0.1"
+  checksum: 58ee9538f2f762988433da00e26acc788036914d57c71c246bf0be1b60cdbd77dd60b6a3e1a30465f0b248aeb80079e0b34cb6050b1dfa18c06953bb1cbc7602
+  languageName: node
+  linkType: hard
+
 "pako@npm:~1.0.2":
   version: 1.0.11
   resolution: "pako@npm:1.0.11"
@@ -9956,6 +10013,16 @@ __metadata:
     lru-cache: ^9.0.0
     minipass: ^5.0.0
   checksum: bd5262b51dc35b0d6f0b1d4fa4445789839982bd649904f18fe43717ecc3021d2313a80768b56cd0428f5ca50d740a6c609e747cd6a053efaa802e07eb5b7b18
+  languageName: node
+  linkType: hard
+
+"path-scurry@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "path-scurry@npm:2.0.0"
+  dependencies:
+    lru-cache: ^11.0.0
+    minipass: ^7.1.2
+  checksum: 9953ce3857f7e0796b187a7066eede63864b7e1dfc14bf0484249801a5ab9afb90d9a58fc533ebb1b552d23767df8aa6a2c6c62caf3f8a65f6ce336a97bbb484
   languageName: node
   linkType: hard
 
@@ -10964,6 +11031,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rimraf@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "rimraf@npm:6.0.1"
+  dependencies:
+    glob: ^11.0.0
+    package-json-from-dist: ^1.0.0
+  bin:
+    rimraf: dist/esm/bin.mjs
+  checksum: 8ba5b84131c1344e9417cb7e8c05d8368bb73cbe5dd4c1d5eb49fc0b558209781658d18c450460e30607d0b7865bb067482839a2f343b186b07ae87715837e66
+  languageName: node
+  linkType: hard
+
 "roarr@npm:^2.15.3":
   version: 2.15.4
   resolution: "roarr@npm:2.15.4"
@@ -11846,6 +11925,132 @@ __metadata:
   checksum: c6bfbda610f3fe5f4f28a53d846a4d13abc7c807a61ab808a152569881d03479c6a5a4b07edc910db50a2460e3e9e4274b9d299c471245724435e66772816b71
   languageName: node
   linkType: hard
+
+"superdb-desktop@workspace:apps/zui":
+  version: 0.0.0-use.local
+  resolution: "superdb-desktop@workspace:apps/zui"
+  dependencies:
+    "@babel/core": ^7.17.9
+    "@brimdata/zed-js": "workspace:*"
+    "@brimdata/zed-node": "workspace:*"
+    "@js-joda/core": ^3.2.0
+    "@monaco-editor/react": ^4.5.1
+    "@react-aria/dnd": ^3.7.2
+    "@reduxjs/toolkit": ^2.2.5
+    "@tanstack/react-table": ^8.7.0
+    "@testing-library/dom": ^8.13.0
+    "@testing-library/jest-dom": ^5.16.4
+    "@testing-library/react": ^13.1.1
+    "@testing-library/user-event": ^14.1.1
+    "@types/animejs": ^3.1.2
+    "@types/classnames": ^2.2.10
+    "@types/d3": ^6.7.0
+    "@types/electron-devtools-installer": ^2.2.0
+    "@types/lodash": ^4.14.161
+    "@types/mousetrap": ^1.6.3
+    "@types/node-fetch": ^3.0.3
+    "@types/react": ^18.0.5
+    "@types/react-dom": ^18.0.1
+    "@types/react-redux": ^7.1.25
+    "@types/react-router": ^5.1.11
+    "@types/react-transition-group": ^4.4.6
+    "@types/react-window": ^1.8.5
+    "@types/semver": ^7.3.3
+    "@types/sprintf-js": ^1.1.2
+    "@types/styled-components": ^5.1.3
+    "@types/tmp": ^0.2.0
+    abort-controller: ^3.0.0
+    acorn: ^7.4.1
+    ajv: ^6.9.1
+    animejs: ^3.2.0
+    bullet: ^0.0.7
+    chalk: ^4.1.0
+    chrono-node: ^2.5.0
+    classnames: ^2.2.6
+    commander: ^2.20.3
+    cross-fetch: ^3.1.6
+    d3: ^6.7.0
+    date-fns: ^2.16.1
+    debut-css: ^0.7.0
+    decompress: ^4.2.1
+    electron: 30.0.5
+    electron-builder: ^24.13.3
+    electron-devtools-assembler: ^1.2.0
+    electron-dl: ^3.0.1
+    electron-localshortcut: ^3.2.1
+    electron-log: 5.0.0-beta.6
+    electron-mock-ipc: ^0.3.12
+    electron-updater: 6.2.1
+    esbuild: ^0.18.14
+    event-source-polyfill: ^1.0.25
+    event-stream: ^4.0.1
+    filter-console: ^0.1.1
+    fs-extra: ^11.3.0
+    glob: ^9.3.4
+    got: ^10.7.0
+    husky: ^7.0.4
+    is-wsl: ^2.2.0
+    jest: ^29.7.0
+    jest-css-modules-transform: ^4.4.2
+    jest-environment-jsdom: ^29.7.0
+    js-yaml: ^4.1.0
+    jwt-decode: ^3.1.2
+    keytar: ^7.7.0
+    lint-staged: ^12.1.5
+    livereload: ^0.9.1
+    lodash: ^4.17.21
+    memoize-one: ^6.0.0
+    moment: ^2.27.0
+    moment-timezone: ^0.5.31
+    monaco-editor: ^0.47.0
+    mousetrap: ^1.6.5
+    msw: ^0.36.8
+    next: ^13.3.0
+    node-fetch: ^2.6.1
+    nodemon: ^2.0.22
+    npm-run-all: ^4.1.5
+    octokit: ^4.1.2
+    ohm-js: ^17.0.4
+    on-idle: ^3.1.4
+    polished: ^3.6.5
+    prettier: ^2.6.2
+    react: ^18.0.0
+    react-arborist: 3.0.2
+    react-dnd: ^14.0.5
+    react-dnd-html5-backend: ^14.0.2
+    react-dom: ^18.0.0
+    react-error-boundary: ^4.0.10
+    react-hook-form: ^7.44.3
+    react-hot-toast: ^1.0.1
+    react-input-autosize: ^3.0.0
+    react-is: ^17.0.2
+    react-markdown: ^6.0.2
+    react-redux: ^8.0.5
+    react-router: 5.3.1
+    react-transition-group: ^4.4.5
+    react-window: ^1.8.7
+    regenerator-runtime: ^0.13.6
+    reselect: 4.0.0
+    resize-observer-polyfill: ^1.5.1
+    sass: ^1.51.0
+    semver: ^7.5.3
+    set-tz: ^0.2.0
+    sprintf-js: ^1.1.2
+    styled-components: ^5.3.5
+    super: "github:brimdata/super#main"
+    tmp: ^0.1.0
+    tree-model: ^1.0.7
+    typescript: 5.1.5
+    use-resize-observer: ^8.0.0
+    utopia-core-scss: ^1.0.1
+    web-file-polyfill: ^1.0.4
+    web-streams-polyfill: ^3.2.0
+    when-clause: ^0.0.4
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  languageName: unknown
+  linkType: soft
 
 "supports-color@npm:^5.3.0, supports-color@npm:^5.5.0":
   version: 5.5.0
@@ -13096,132 +13301,7 @@ __metadata:
     fs-extra: ^11.3.0
     playwright: 1.44.0
     playwright-chromium: 1.44.0
+    rimraf: ^6.0.1
     typescript: 5.1.5
-  languageName: unknown
-  linkType: soft
-
-"zui@workspace:apps/zui":
-  version: 0.0.0-use.local
-  resolution: "zui@workspace:apps/zui"
-  dependencies:
-    "@babel/core": ^7.17.9
-    "@brimdata/zed-js": "workspace:*"
-    "@brimdata/zed-node": "workspace:*"
-    "@js-joda/core": ^3.2.0
-    "@monaco-editor/react": ^4.5.1
-    "@react-aria/dnd": ^3.7.2
-    "@reduxjs/toolkit": ^2.2.5
-    "@tanstack/react-table": ^8.7.0
-    "@testing-library/dom": ^8.13.0
-    "@testing-library/jest-dom": ^5.16.4
-    "@testing-library/react": ^13.1.1
-    "@testing-library/user-event": ^14.1.1
-    "@types/animejs": ^3.1.2
-    "@types/classnames": ^2.2.10
-    "@types/d3": ^6.7.0
-    "@types/electron-devtools-installer": ^2.2.0
-    "@types/lodash": ^4.14.161
-    "@types/mousetrap": ^1.6.3
-    "@types/node-fetch": ^3.0.3
-    "@types/react": ^18.0.5
-    "@types/react-dom": ^18.0.1
-    "@types/react-redux": ^7.1.25
-    "@types/react-router": ^5.1.11
-    "@types/react-transition-group": ^4.4.6
-    "@types/react-window": ^1.8.5
-    "@types/semver": ^7.3.3
-    "@types/sprintf-js": ^1.1.2
-    "@types/styled-components": ^5.1.3
-    "@types/tmp": ^0.2.0
-    abort-controller: ^3.0.0
-    acorn: ^7.4.1
-    ajv: ^6.9.1
-    animejs: ^3.2.0
-    bullet: ^0.0.7
-    chalk: ^4.1.0
-    chrono-node: ^2.5.0
-    classnames: ^2.2.6
-    commander: ^2.20.3
-    cross-fetch: ^3.1.6
-    d3: ^6.7.0
-    date-fns: ^2.16.1
-    debut-css: ^0.7.0
-    decompress: ^4.2.1
-    electron: 30.0.5
-    electron-builder: ^24.13.3
-    electron-devtools-assembler: ^1.2.0
-    electron-dl: ^3.0.1
-    electron-localshortcut: ^3.2.1
-    electron-log: 5.0.0-beta.6
-    electron-mock-ipc: ^0.3.12
-    electron-updater: 6.2.1
-    esbuild: ^0.18.14
-    event-source-polyfill: ^1.0.25
-    event-stream: ^4.0.1
-    filter-console: ^0.1.1
-    fs-extra: ^11.3.0
-    glob: ^9.3.4
-    got: ^10.7.0
-    husky: ^7.0.4
-    is-wsl: ^2.2.0
-    jest: ^29.7.0
-    jest-css-modules-transform: ^4.4.2
-    jest-environment-jsdom: ^29.7.0
-    js-yaml: ^4.1.0
-    jwt-decode: ^3.1.2
-    keytar: ^7.7.0
-    lint-staged: ^12.1.5
-    livereload: ^0.9.1
-    lodash: ^4.17.21
-    memoize-one: ^6.0.0
-    moment: ^2.27.0
-    moment-timezone: ^0.5.31
-    monaco-editor: ^0.47.0
-    mousetrap: ^1.6.5
-    msw: ^0.36.8
-    next: ^13.3.0
-    node-fetch: ^2.6.1
-    nodemon: ^2.0.22
-    npm-run-all: ^4.1.5
-    octokit: ^4.1.2
-    ohm-js: ^17.0.4
-    on-idle: ^3.1.4
-    polished: ^3.6.5
-    prettier: ^2.6.2
-    react: ^18.0.0
-    react-arborist: 3.0.2
-    react-dnd: ^14.0.5
-    react-dnd-html5-backend: ^14.0.2
-    react-dom: ^18.0.0
-    react-error-boundary: ^4.0.10
-    react-hook-form: ^7.44.3
-    react-hot-toast: ^1.0.1
-    react-input-autosize: ^3.0.0
-    react-is: ^17.0.2
-    react-markdown: ^6.0.2
-    react-redux: ^8.0.5
-    react-router: 5.3.1
-    react-transition-group: ^4.4.5
-    react-window: ^1.8.7
-    regenerator-runtime: ^0.13.6
-    reselect: 4.0.0
-    resize-observer-polyfill: ^1.5.1
-    sass: ^1.51.0
-    semver: ^7.5.3
-    set-tz: ^0.2.0
-    sprintf-js: ^1.1.2
-    styled-components: ^5.3.5
-    super: "github:brimdata/super#main"
-    tmp: ^0.1.0
-    tree-model: ^1.0.7
-    typescript: 5.1.5
-    use-resize-observer: ^8.0.0
-    utopia-core-scss: ^1.0.1
-    web-file-polyfill: ^1.0.4
-    web-streams-polyfill: ^3.2.0
-    when-clause: ^0.0.4
-  peerDependencies:
-    react: ^18.0.0
-    react-dom: ^18.0.0
   languageName: unknown
   linkType: soft

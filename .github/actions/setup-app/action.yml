@@ -1,5 +1,5 @@
-name: Setup Zui
-description: Shared steps for setting up Zui in workflows
+name: Setup App
+description: Shared steps for setting up the app in workflows
 runs:
   using: 'composite'
   steps:

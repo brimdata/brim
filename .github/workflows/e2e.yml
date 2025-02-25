@@ -16,15 +16,15 @@ on:
         type: choice
         default: 'true'
         options:
-        - 'true'
-        - 'false'
+          - 'true'
+          - 'false'
         required: true
       debug:
         description: Playwright debug logging
         type: choice
         options:
-        - 'pw:api'
-        - ''
+          - 'pw:api'
+          - ''
       always-upload:
         description: Always upload artifacts even if tests don't fail?
         type: boolean
@@ -42,7 +42,7 @@ jobs:
         run: echo "${{ toJSON(inputs) }}"
         shell: sh
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-zui
+      - uses: ./.github/actions/setup-app
       - name: Install dependencies (Linux)
         if: startsWith(matrix.os, 'ubuntu-')
         run: sudo apt-get -y install whois

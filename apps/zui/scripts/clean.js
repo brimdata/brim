@@ -1,5 +1,5 @@
-const fs = require("fs-extra")
-const glob = require("glob")
+import fs from "fs-extra"
+import glob from "glob"
 
 fs.removeSync("out")
 fs.removeSync(".next")

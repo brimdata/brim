@@ -35,7 +35,7 @@ jobs:
           ref: ${{ github.ref }}
           # We need a token with permission to push.
           token: ${{ secrets.ZQ_UPDATE_PAT }}
-      - uses: ./.github/actions/setup-zui
+      - uses: ./.github/actions/setup-app
       - run: sudo apt-get -y install whois
       - run: yarn workspace zui add zed@brimdata/zed#${{ env.zed_ref }}
       - run: yarn lint
